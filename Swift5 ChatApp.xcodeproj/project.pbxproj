@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,7 @@
 		E70BA09C247B1108005E6B26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E70BA09A247B1108005E6B26 /* LaunchScreen.storyboard */; };
 		E70BA0A7247B1108005E6B26 /* Swift5_ChatAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70BA0A6247B1108005E6B26 /* Swift5_ChatAppTests.swift */; };
 		E70BA0B2247B1109005E6B26 /* Swift5_ChatAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70BA0B1247B1109005E6B26 /* Swift5_ChatAppUITests.swift */; };
+		E7A6CCF3247EAEFA00EC6F17 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A6CCF2247EAEFA00EC6F17 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		E70BA0AD247B1109005E6B26 /* Swift5 ChatAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift5 ChatAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E70BA0B1247B1109005E6B26 /* Swift5_ChatAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift5_ChatAppUITests.swift; sourceTree = "<group>"; };
 		E70BA0B3247B1109005E6B26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7A6CCF2247EAEFA00EC6F17 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +113,6 @@
 				42D46E5162F6230C48C62134 /* Pods-Swift5 ChatAppTests.debug.xcconfig */,
 				35B460A14AF6B6B31272DE9C /* Pods-Swift5 ChatAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,11 +141,9 @@
 		E70BA08E247B1105005E6B26 /* Swift5 ChatApp */ = {
 			isa = PBXGroup;
 			children = (
-				E70BA08F247B1105005E6B26 /* AppDelegate.swift */,
-				E70BA091247B1105005E6B26 /* SceneDelegate.swift */,
-				E70BA093247B1105005E6B26 /* ViewController.swift */,
-				E70BA095247B1105005E6B26 /* Main.storyboard */,
-				E70BA098247B1108005E6B26 /* Assets.xcassets */,
+				E7A6CCEF247EADAC00EC6F17 /* Model */,
+				E7A6CCEE247EADA300EC6F17 /* View */,
+				E7A6CCED247EAD8A00EC6F17 /* Controller */,
 				E70BA09A247B1108005E6B26 /* LaunchScreen.storyboard */,
 				E70BA09D247B1108005E6B26 /* Info.plist */,
 			);
@@ -167,6 +166,33 @@
 				E70BA0B3247B1109005E6B26 /* Info.plist */,
 			);
 			path = "Swift5 ChatAppUITests";
+			sourceTree = "<group>";
+		};
+		E7A6CCED247EAD8A00EC6F17 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E70BA08F247B1105005E6B26 /* AppDelegate.swift */,
+				E70BA091247B1105005E6B26 /* SceneDelegate.swift */,
+				E70BA093247B1105005E6B26 /* ViewController.swift */,
+				E7A6CCF2247EAEFA00EC6F17 /* RegisterViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E7A6CCEE247EADA300EC6F17 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E70BA095247B1105005E6B26 /* Main.storyboard */,
+				E70BA098247B1108005E6B26 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E7A6CCEF247EADAC00EC6F17 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,6 +437,7 @@
 				E70BA094247B1105005E6B26 /* ViewController.swift in Sources */,
 				E70BA090247B1105005E6B26 /* AppDelegate.swift in Sources */,
 				E70BA092247B1105005E6B26 /* SceneDelegate.swift in Sources */,
+				E7A6CCF3247EAEFA00EC6F17 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
