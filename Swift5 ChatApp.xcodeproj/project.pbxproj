@@ -19,6 +19,10 @@
 		E70BA0A7247B1108005E6B26 /* Swift5_ChatAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70BA0A6247B1108005E6B26 /* Swift5_ChatAppTests.swift */; };
 		E70BA0B2247B1109005E6B26 /* Swift5_ChatAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70BA0B1247B1109005E6B26 /* Swift5_ChatAppUITests.swift */; };
 		E7A6CCF3247EAEFA00EC6F17 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A6CCF2247EAEFA00EC6F17 /* RegisterViewController.swift */; };
+		E7A6CCF5247EF60800EC6F17 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A6CCF4247EF60800EC6F17 /* ChatViewController.swift */; };
+		E7A6CCF7247EF77800EC6F17 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A6CCF6247EF77800EC6F17 /* LoginViewController.swift */; };
+		E7A6CCFA247EFBF800EC6F17 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A6CCF8247EFBF800EC6F17 /* CustomCell.swift */; };
+		E7A6CCFB247EFBF900EC6F17 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7A6CCF9247EFBF800EC6F17 /* CustomCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,10 @@
 		E70BA0B1247B1109005E6B26 /* Swift5_ChatAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift5_ChatAppUITests.swift; sourceTree = "<group>"; };
 		E70BA0B3247B1109005E6B26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7A6CCF2247EAEFA00EC6F17 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		E7A6CCF4247EF60800EC6F17 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		E7A6CCF6247EF77800EC6F17 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E7A6CCF8247EFBF800EC6F17 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		E7A6CCF9247EFBF800EC6F17 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +183,8 @@
 				E70BA091247B1105005E6B26 /* SceneDelegate.swift */,
 				E70BA093247B1105005E6B26 /* ViewController.swift */,
 				E7A6CCF2247EAEFA00EC6F17 /* RegisterViewController.swift */,
+				E7A6CCF4247EF60800EC6F17 /* ChatViewController.swift */,
+				E7A6CCF6247EF77800EC6F17 /* LoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -184,6 +194,8 @@
 			children = (
 				E70BA095247B1105005E6B26 /* Main.storyboard */,
 				E70BA098247B1108005E6B26 /* Assets.xcassets */,
+				E7A6CCF8247EFBF800EC6F17 /* CustomCell.swift */,
+				E7A6CCF9247EFBF800EC6F17 /* CustomCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -306,6 +318,7 @@
 			files = (
 				E70BA09C247B1108005E6B26 /* LaunchScreen.storyboard in Resources */,
 				E70BA099247B1108005E6B26 /* Assets.xcassets in Resources */,
+				E7A6CCFB247EFBF900EC6F17 /* CustomCell.xib in Resources */,
 				E70BA097247B1105005E6B26 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,9 +447,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7A6CCF7247EF77800EC6F17 /* LoginViewController.swift in Sources */,
 				E70BA094247B1105005E6B26 /* ViewController.swift in Sources */,
 				E70BA090247B1105005E6B26 /* AppDelegate.swift in Sources */,
 				E70BA092247B1105005E6B26 /* SceneDelegate.swift in Sources */,
+				E7A6CCF5247EF60800EC6F17 /* ChatViewController.swift in Sources */,
+				E7A6CCFA247EFBF800EC6F17 /* CustomCell.swift in Sources */,
 				E7A6CCF3247EAEFA00EC6F17 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

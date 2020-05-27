@@ -1,8 +1,8 @@
 //
-//  RegisterViewController.swift
+//  LoginViewController.swift
 //  Swift5 ChatApp
 //
-//  Created by 平林宏淳 on 2020/05/27.
+//  Created by 平林宏淳 on 2020/05/28.
 //  Copyright © 2020 Hiroaki_Hirabayashi. All rights reserved.
 //
 
@@ -10,45 +10,40 @@ import UIKit
 import Firebase
 import Lottie
 
-class RegisterViewController: UIViewController {
-    
-    
+class LoginViewController: UIViewController {
+
     @IBOutlet weak var emailTextFild: UITextField!
     @IBOutlet weak var passwordTextFild: UITextField!
     
     let animationView = AnimationView()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
     }
     
-    //Firebaseにユーザーを登録する(作成する)
-    @IBAction func registerNewUser(_ sender: Any) {
+
+    @IBAction func login(_ sender: Any) {
         
-        //アニメーションスタート
         startAnimation()
-        //新規登録
-        Auth.auth().createUser(withEmail: emailTextFild.text!, password: passwordTextFild.text!) { (user, error) in
+        
+        Auth.auth().signIn(withEmail: emailTextFild.text!, password: passwordTextFild.text!) { (user, error) in
             
             if error != nil{
                 
-                print(error as Any)
-                
+                print("error")
+            
             }else{
                 
-                print("ユーザーを登録しました。")
-                
-                //アニメーションストップ
+                print("ログインしました。")
                 self.stopAnimation()
-                
-                //画面遷移
                 self.performSegue(withIdentifier: "chat", sender: nil)
-                
             }
+            
         }
+        
+        
     }
-    
     
     func startAnimation(){
         
@@ -68,22 +63,17 @@ class RegisterViewController: UIViewController {
         animationView.removeFromSuperview()
         
     }
+
     
     
-    
-    
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
 }
-
-
-
-/*
- // MARK: - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
- // Get the new view controller using segue.destination.
- // Pass the selected object to the new view controller.
- }
- */
-
-
